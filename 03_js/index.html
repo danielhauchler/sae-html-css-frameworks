@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      cursor: pointer;
+      transition: 1s ease-in-out
+    }
+    #box:hover {
+      background-color:blueviolet
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <script>
+    
+    // Taschenrechner
+    function addieren(a, b) {
+      var ergebnis = a + b;
+      console.log(ergebnis)
+    }
+
+
+    var meineBox = document.getElementById('box')
+    meineBox.addEventListener("click", function() {
+      meineBox.style.backgroundColor = "red";
+      meineBox.style.width = "500px";
+    });
+
+  </script>
+</body>
+</html>
